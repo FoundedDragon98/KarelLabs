@@ -7,10 +7,10 @@ import kareltherobot.*;
  * teacher :
  * due date:
  */
-public class Harvester extends Robot
+public class Planter extends Harvester
 {
     //Constructor method that utilizes the constructor method of the super class (UrRobot)
-    public Harvester(int st, int av, Direction dir, int numBeepers) {
+    public Planter(int st, int av, Direction dir, int numBeepers) {
         super(st, av, dir, numBeepers);
 
     }
@@ -48,7 +48,7 @@ public class Harvester extends Robot
     
     public void harvestCorner() {
         //
-        pickBeeper();
+        putBeeper();
     }
     
     public void repositionLeft() {

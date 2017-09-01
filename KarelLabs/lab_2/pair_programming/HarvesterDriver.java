@@ -13,6 +13,8 @@ public class HarvesterDriver implements Directions
     public static void main(String[] args) {
         Harvester harry = new Harvester(2,2, East, 0);
         harry.harvest();
+        Planter paul = new Planter(2, 2, East, -1);
+        paul.harvest();
         harry.turnOff();
     }
     
@@ -22,7 +24,7 @@ public class HarvesterDriver implements Directions
         World.setBeeperColor(Color.magenta);
         World.setStreetColor(Color.blue);
         World.setNeutroniumColor(Color.green.darker());
-        World.setDelay(50);  
+        World.setDelay(15);  
         World.setVisible(true);
     }
 }

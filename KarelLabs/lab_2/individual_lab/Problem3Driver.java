@@ -5,16 +5,16 @@ package lab_2.individual_lab;
       Date:
    Teacher: Appel
        Lab: Problem Set 3
-      Misc: Karel plants a garden in a cross-shape
+      Misc: Karel writes the word hello
   */
 import kareltherobot.*;
 import java.awt.Color;
 
-public class Problem1Driver implements Directions
+public class Problem3Driver implements Directions
 {
     public static void main(String args[])  {
-        Problem1 karel = new Problem1(5, 1, West, 10);
-        karel.setPins();
+        Problem3 karel = new Problem3(7, 2, South, -1);
+        karel.hello();
         karel.turnOff();
     } 
 

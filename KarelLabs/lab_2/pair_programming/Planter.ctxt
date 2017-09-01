@@ -1,5 +1,5 @@
 #BlueJ class context
-comment0.target=Harvester
+comment0.target=Planter
 comment0.text=\r\n\ @author\ \:\r\n\ teacher\ \:\r\n\ due\ date\:\r\n
 comment1.params=
 comment1.target=void\ harvest()

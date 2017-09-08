@@ -14,8 +14,32 @@ public class Problem1 extends Robot
         super(st, av, dir, beep);
     }
 
-    public void checkSurrounded(){
-        
+    public void checkSurrounded() {
+        if(!frontIsClear()) {
+            turnLeft();
+            if(!frontIsClear()) {
+                turnLeft();
+                if(!frontIsClear()) {
+                    turnLeft();
+                    if(!frontIsClear()) {
+                        turnLeft();
+                        turnOff();
+                    }
+                    else {
+                        turnLeft();
+                    }
+                }
+                else {
+                    turnLeft();
+                    turnLeft();
+                }
+            }
+            else {
+                turnLeft();
+                turnLeft();
+                turnLeft();
+            }
+        }
     }
 }
 

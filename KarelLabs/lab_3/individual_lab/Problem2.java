@@ -29,8 +29,11 @@ public class Problem2 extends Robot
         findRoom();
         if(checkRoom()) {
             putBeeper();
+            reposition();
         }
-        reposition();
+        else {
+            reposition();
+        }
     }
     
     public boolean checkRoom() {
